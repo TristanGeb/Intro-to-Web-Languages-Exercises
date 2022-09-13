@@ -1,0 +1,21 @@
+<!--this creates teh html vars -->
+<input id="name-input" type="text" placeholder="Enter your name" />
+<button id="my-button">Click Me</button>
+
+<script>
+    //this initilizes and creates a var and looks for the id of what is listed
+  var myButton = document.querySelector('#my-button');
+  var nameInput = document.querySelector('#name-input');
+  //thhis event adds a listener for the main process(not my button)
+    // which if presses whill run teh funciton listed
+    //the funtionis stored with eth myButton.
+  myButton.addEventListener('click', function () {
+    //if name is not empty
+    if (nameInput.value !== '') {
+      alert('Hello ' + nameInput.value);
+    }
+  });
+</script>
+<html>
+    <title>Exercise 7</title>
+</html>
